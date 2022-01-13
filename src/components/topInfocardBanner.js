@@ -13,7 +13,6 @@ const topInfocardBanner = () => {
   ).src;
   topInfocardBannerStructure = `
 
-    
         <div class='top-infocard-banner-content'>
         
             <div class='top-infocard-banner-texts-logo'>
