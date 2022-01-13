@@ -1,0 +1,6 @@
+@import "global.css";
+@import "header.css";
+
+.fake-image {
+  display: none;
+}
