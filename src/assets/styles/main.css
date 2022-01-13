@@ -1,5 +1,6 @@
 @import "global.css";
 @import "header.css";
+@import "topInfocardBanner.css";
 
 .fake-image {
   display: none;
