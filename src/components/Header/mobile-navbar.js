@@ -1,48 +1,21 @@
-const mobileNavibar = () => {
-  class MobileNavbar {
-    constructor(mobileMenu, navList, navLinks) {
-      this.mobileMenu = document.querySelector(mobileMenu);
-      this.navList = document.querySelector(navList);
-      this.navLinks = document.querySelectorAll(navLinks);
-      this.activeClass = "active";
+const mobileNavbar = () => {
+  const activeNavbarButton = document.querySelector(".active-navbar-button");
 
-      this.handleClick = this.handleClick.bind(this);
+  function toggleMenu(event) {
+    /*Se o tipo do evento for o touchstart ele vai ouvir apenas o touchstart e não ouvir o click, assim não dá problema */
+    if (event.type == "touchstart") {
+      event.preventdefalut();
     }
 
-    animateLinks() {
-      this.navLinks.forEach((link, index) => {
-        link.style.animation
-          ? (link.style.animation = "")
-          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-              index / 7 + 0.3
-            }s`);
-      });
-    }
-
-    handleClick() {
-      this.navList.classList.toggle(this.activeClass);
-      this.mobileMenu.classList.toggle(this.activeClass);
-      this.animateLinks();
-    }
-
-    addClickEvent() {
-      this.mobileMenu.addEventListener("click", this.handleClick);
-    }
-
-    init() {
-      if (this.mobileMenu) {
-        this.addClickEvent();
-      }
-      return this;
-    }
+    const navBar = document.querySelector(".header-navbar-mobile");
+    navBar.classList.toggle("active");
   }
 
-  const mobileNavbar = new MobileNavbar(
-    ".mobile-navbar",
-    ".header-text",
-    ".header-text p"
-  );
-  mobileNavbar.init();
+  activeNavbarButton.addEventListener("click", toggleMenu);
+  activeNavbarButton.addEventListener(
+    "touchstart",
+    toggleMenu
+  ); /*O evento click demora cerca de 300ms para responder, o touchstart é o mais recomendado para o mobile */
 };
 
-export default mobileNavibar;
+export default mobileNavbar;

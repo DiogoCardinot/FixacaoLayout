@@ -13,6 +13,10 @@
   display: flex;
   align-items: center;
 }
+
+.active-navbar-button {
+  display: none;
+}
 .header-navbar-button {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -42,52 +46,73 @@ a:hover {
   padding: 8px 24px;
 }
 
-.mobile-navbar {
-  display: none;
-  cursor: pointer;
-}
-.mobile-navbar div {
-  width: 32px;
-  height: 2px;
-  background: black;
-  margin: 8px;
-}
-
 @media screen and (max-width: 769px) {
-  body {
-    overflow: hidden;
-    /*se algo ficar fora da tela ele não mostra, bloqueia no 100% da tela*/
-  }
   .header-content {
-    padding: 0 28px;
+    padding: 0 26px;
   }
-  .mobile-navbar {
+  .header-text {
     display: block;
+    position: absolute;
+    padding-right: 5px;
+    top: 64px;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    z-index: 1000;
+    /* height: 0; */
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  .header-navbar-mobile.active .header-text {
+    display: flex;
+    visibility: visible;
+    overflow-y: auto;
   }
   .header-navbar-button {
-    padding: 0 0;
+    padding-right: 0;
     margin-top: 12px;
   }
   .header-navbar-contacts {
     margin-top: 12px;
   }
-  .header-text {
-    position: absolute;
-    right: 0;
-    top: 50px;
-    background: #fff;
+  .active-navbar-button {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
     flex-direction: column;
-    align-items: center;
-    padding: 0 3px;
-    transform: translateX(100%);
-    /* joga os textos da navbar para fora do 100% da tela*/
-    transition: transform 0.3s ease-in;
   }
-  .header-text.active {
-    transform: translateX(0);
+  .hamburguer-button {
+    color: black;
+    border-top: 2px solid;
+    width: 25px;
   }
 
-  .header-text p {
-    margin-left: 0;
+  /* cria as outras duas linhas da navbar*/
+  .hamburguer-button::after,
+  .hamburguer-button::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: currentColor; /*pega a cor que está no hamburguer button */
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  .header-navbar-mobile.active .hamburguer-button {
+    border-top-color: transparent;
+  }
+  .header-navbar-mobile.active .hamburguer-button::before {
+    transform: rotate(135deg);
+  }
+
+  .header-navbar-mobile.active .hamburguer-button::after {
+    transform: rotate(-135deg);
+    top: -7px;
   }
 }
