@@ -3,6 +3,7 @@
 @import "topInfocardBanner.css";
 @import "./middleDescription.css";
 @import "./middleImages.css";
+@import "./contacts.css";
 
 .fake-image {
   display: none;

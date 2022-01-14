@@ -3,6 +3,7 @@ import mobileNavbar from "./Header/mobile-navbar.js";
 import topInfocardBanner from "./topInfocardBanner.js";
 import middleDescription from "./middleDescription.js";
 import middleImages from "./middleImages.js";
+import Contacts from "./contacts.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   Header();
@@ -10,4 +11,5 @@ document.addEventListener("DOMContentLoaded", function () {
   topInfocardBanner();
   middleDescription();
   middleImages();
+  Contacts();
 });
