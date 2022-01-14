@@ -15,11 +15,11 @@ const Header = () => {
                 <span class='hamburguer-button'></span>
              </button>
                 <div class ='header-text'>
-                    <a href="">
+                    <a href="https://m3ecommerce.com/migracao-de-plataforma/" target="_blank">
                         <p class= 'header-navbar-button'>Serviços</p>
                     </a>
 
-                    <a href="">
+                    <a href="https://m3ecommerce.com/blog/" target="_blank">
                         <p class= 'header-navbar-button'>Blog</p>
                     </a>
                     

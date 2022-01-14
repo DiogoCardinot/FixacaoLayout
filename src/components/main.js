@@ -4,6 +4,7 @@ import topInfocardBanner from "./topInfocardBanner.js";
 import middleDescription from "./middleDescription.js";
 import middleImages from "./middleImages.js";
 import Contacts from "./contacts.js";
+import partnerCompanies from "./partnerCompanies.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   Header();
@@ -12,4 +13,5 @@ document.addEventListener("DOMContentLoaded", function () {
   middleDescription();
   middleImages();
   Contacts();
+  partnerCompanies();
 });

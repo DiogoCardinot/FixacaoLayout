@@ -4,6 +4,7 @@
 @import "./middleDescription.css";
 @import "./middleImages.css";
 @import "./contacts.css";
+@import "./partnerCompanies.css";
 
 .fake-image {
   display: none;
