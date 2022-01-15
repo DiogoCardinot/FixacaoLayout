@@ -33,8 +33,10 @@ const partnerCompanies = () => {
             <div class='partner-companies-mobile'>
                 <div class='partner-companies-mobile-top'>
                     <img src=${partImageGoogleMobile} alt="EmpresaParceiraGoogle" class='partner-companies-image-mobile-google'/>
-                    <img src=${partImageSeloMobile} alt="SeloExcelencia" class='partner-companies-image-mobile-selo'/>
+                  
+                    <img src=${partImageSeloMobile} alt="SeloExcelencia" class='partner-companies-image-mobile-selo'/>   
                 </div>
+
                 <div class='partner-companies-logom3-mobile'>
                     <img src=${partImageLogoM3Mobile} alt="LogoM3" class='partner-companies-image-mobile-logom3'/>
                 </div>

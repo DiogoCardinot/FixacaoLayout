@@ -5,6 +5,7 @@ import middleDescription from "./middleDescription.js";
 import middleImages from "./middleImages.js";
 import Contacts from "./contacts.js";
 import partnerCompanies from "./partnerCompanies.js";
+import Footer from "./footer.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   Header();
@@ -14,4 +15,5 @@ document.addEventListener("DOMContentLoaded", function () {
   middleImages();
   Contacts();
   partnerCompanies();
+  Footer();
 });
