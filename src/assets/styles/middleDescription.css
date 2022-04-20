@@ -1,0 +1,13 @@
+.middle-description-text {
+  display: flex;
+  padding: 0px 50px 44px;
+}
+.middle-description-description {
+  text-align: center;
+}
+
+@media screen and (max-width: 1140px) {
+  .middle-description-text {
+    padding: 40px;
+  }
+}

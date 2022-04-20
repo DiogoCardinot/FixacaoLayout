@@ -1,0 +1,38 @@
+.page-footer {
+  background: var(--backgroundFooter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 40px;
+}
+.footer-text-email {
+  font-family: "Encode Sans", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: lowercase;
+  color: var(--white);
+}
+.footer-icons {
+  display: flex;
+  list-style: none;
+}
+.footer-icon {
+  margin: 0 24px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .page-footer {
+    flex-direction: column;
+  }
+  .footer-text-email {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .footer-icons {
+    margin-top: 12px;
+  }
+  .footer-icon {
+    margin: 0 16px 0;
+  }
+}

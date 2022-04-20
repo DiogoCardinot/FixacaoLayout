@@ -1,0 +1,118 @@
+.contacts-wrapper {
+  display: flex;
+  background: var(--contactsBackground);
+  justify-content: center;
+  align-items: center;
+  padding: 42px 30px;
+}
+
+.contacts-logom3-desktop {
+  margin-right: 76px;
+}
+.contacts-logom3-mobile {
+  display: none;
+}
+.contacts-text {
+  margin-left: 76px;
+}
+
+.contacts-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 54px;
+  line-height: 60px;
+  color: var(--blueTitleContacts);
+  margin-bottom: 12px;
+}
+
+.contacts-tel1 {
+  font-family: "Encode Sans", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: var(--grey-300);
+  margin-bottom: 12px;
+}
+.contacts-email {
+  font-family: Encode Sans;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--grey-300);
+  margin-bottom: 36px;
+}
+
+.contacts-city {
+  font-family: "Encode Sans", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: var(--grey-300);
+  margin-bottom: 12px;
+}
+.contacts-tel2 {
+  font-family: "Encode Sans", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
+  color: var(--grey-300);
+}
+
+@media screen and (max-width: 580px) {
+  .contacts-wrapper {
+    flex-direction: column;
+  }
+  .contacts-logom3-desktop {
+    display: none;
+  }
+  .contacts-logom3-mobile {
+    display: flex;
+    margin-top: 50px;
+  }
+  .contacts-text {
+    margin-left: 0;
+  }
+  .contacts-title {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 8px;
+  }
+  .contacts-tel1 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 8px;
+  }
+  .contacts-email {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 32px;
+  }
+  .contacts-city {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+  .contacts-tel2 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+@media screen and (min-width: 581px) and (max-width: 860px) {
+  .contacts-wrapper {
+    flex-direction: column;
+    padding: 20px 26px;
+  }
+  .contacts-logom3-desktop {
+    display: none;
+  }
+
+  .contacts-logom3-mobile {
+    display: flex;
+    margin-top: 50px;
+  }
+  .contacts-text {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,110 @@
+.top-infocard-content {
+  background: linear-gradient(#ffdb77, #ffb52d);
+  width: 100%;
+  margin-bottom: 120px;
+}
+.top-infocard-banner-content {
+  display: flex;
+  padding: 0 26px 20px 26px;
+}
+
+.top-infocard-banner-title {
+  max-width: 620px;
+  font-family: "Encode Sans", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 60px;
+  margin-left: 50px;
+  margin-top: 80px;
+  margin-bottom: 76px;
+  color: #ffffff;
+}
+
+.top-infocard-banner-m3academy {
+  display: flex;
+  align-items: center;
+  margin-left: 160px;
+}
+
+.top-infocard-banner-retangle {
+  width: 2px;
+  height: 50px;
+  background: #fff;
+  margin-right: 14px;
+}
+.top-infocard-banner-m3academy-logo {
+  margin-right: 8px;
+}
+.top-infocard-banner-description {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: -0.1em;
+  text-transform: lowercase;
+  color: #1e1d1d;
+}
+
+.top-infocard-banner-bottom-logo {
+  margin-top: 100px;
+}
+
+.top-infocard-banner-principal {
+  position: relative;
+  margin-left: 200px;
+  bottom: -120px;
+}
+.top-infocard-banner-principal-image {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .top-infocard-banner-texts-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top-infocard-banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .top-infocard-banner-principal {
+    margin-left: 0;
+  }
+  .top-infocard-banner-title {
+    margin-left: 0;
+  }
+  .top-infocard-banner-m3academy {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .top-infocard-banner-content {
+    align-items: center;
+    padding: 0 26px;
+  }
+  .top-infocard-banner-content {
+    flex-direction: column;
+  }
+  .top-infocard-title-m3academy {
+    display: flex;
+    justify-content: center;
+  }
+  .top-infocard-banner-texts-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top-infocard-banner-title {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .top-infocard-banner-m3academy {
+    margin-left: 50px;
+  }
+  .top-infocard-banner-principal {
+    margin-left: 0;
+  }
+}
